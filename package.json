@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.6.2",
+    "multer": "^1.4.5-lts.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "code-complexity-measuring-tool",
+  "description": "SIT725 - Applied Software Engineering",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "Tharidhi",
+  "license": "ISC"
+}
