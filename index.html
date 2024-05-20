@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Code Complexity Measuring Tool">
+    <meta name="author" content="SitePoint">
+    <meta property="og:title" content="Code Complexity Measuring Tool">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Code Complexity Measuring Tool">
+    <title>Code Complexity Measuring Tool</title>
+    <link rel="stylesheet" type="text/css" href="src/public/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="src/public/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="src/public/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="src/public/css/fixedHeader.dataTables.min.css">
+    <!-- Custom Style Sheet-->
+    <link rel="stylesheet" href="src/public/css/style.css">
+    <script src="src/public/js/jquery-3.3.1.js"></script>
+    <script src="src/public/js/popper.min.js"></script>
+    <script src="src/public/js/bootstrap.min.js"></script>
+    <script src="src/public/js/jquery.dataTables.min.js"></script>
+    <script src="src/public/js/dataTables.buttons.min.js"></script>
+    <script src="src/public/js/buttons.flash.min.js"></script>
+    <script src="src/public/js/jszip.min.js"></script>
+    <script src="src/public/js/pdfmake.min.js"></script>
+    <script src="src/public/js/vfs_fonts.js"></script>
+    <script src="src/public/js/buttons.html5.min.js"></script>
+    <script src="src/public/js/buttons.print.min.js"></script>
+    <script src="src/public/js/dataTables.fixedHeader.min.js"></script>
+
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="p-3 mb-2 text-white">
+        <h1>Code </h1>
+        <div id="dis">
+            <table id="example" class="table table-bordered table-hover" style="width:100%">
+                <thead>
+                    <tr>
+                        <td width="3%">Line no</td>
+                        <td width="46%">Program statements</td>
+                        <td width="30%">Tokens identified under the size factor</td>
+                        <td width="3%">Cs</td>
+                        <td width="3%">Ctc</td>
+                        <td width="3%">Cnc</td>
+                        <td width="3%">Ci</td>
+                        <td width="3%">TW</td>
+                        <td width="3%">Cps</td>
+                        <td width="3%">Cr</td>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td width="3%"></td>
+                        <td width="46%">Total Code Complexity Count</td>
+                        <td width="30%"></td>
+                        <td width="3%">Cs</td>
+                        <td width="3%">Ctc</td>
+                        <td width="3%">Cnc</td>
+                        <td width="3%">Ci</td>
+                        <td width="3%">TW</td>
+                        <td width="3%">Cps</td>
+                        <td width="3%">Cr</td>
+
+                    </tr>
+                </tfoot>
+
+            </table>
+            <div id="footer"></div>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $("#header").load("views/header.html");
+            $("#footer").load("views/footer.html");
+        });
+    </script>
+</body>
+
+</html>
