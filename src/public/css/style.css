@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Lucida Sans', sans-serif;
+    background-color: #763c92;
+    color: #fff;
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+
+.h2 {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 20px;
+    color: #612977;
+    font-weight: bolder;
+}
+
+
+.form-container-login {
+    
+    width: 378px;
+    padding: 22px;
+    border: 6px solid #ccc;
+    border-color: #dae7f5;
+    border-radius: 32px;
+    background-color: #fff;
+    
+}
+
+.form-group {
+    margin-bottom: 22px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #612977;
+}
+
+.form-group input {
+    width: 320px;
+    padding: 6px;
+    font-size: 13px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #73378f;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background-color: #451d55;
+}
+
+p {
+    margin-top: 20px;
+    color: #0d7c3d;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+p a {
+    color: #216dd7;
+    text-decoration-color: #216dd7;
+    font-weight: bold;
+    font-size: 16px;
+    font-style: normal;
+}
+
+p a:hover {
+    background-color: #a7c8eb;
+}
+
+/* Alert Box Styles */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/* Error Alert */
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+
+
+
+
+
