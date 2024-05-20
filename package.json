@@ -1,0 +1,35 @@
+{
+  "name": "sit725-2024-t1-prac4",
+  "version": "1.0.0",
+  "description": "SIT725 4.2P",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Natashazr/sit725-2024-t1-prac3.git"
+  },
+  "keywords": [
+    "Express",
+    "NodeJs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Natashazr/sit725-2024-t1-prac4/issues"
+  },
+  "homepage": "https://github.com/Natashazr/sit725-2024-t1-prac4#readme",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "json": "^11.0.0",
+    "mocha": "^9.1.1",
+    "mongodb": "^4.17.2",
+    "package.json": "^0.0.0",
+    "request": "^2.88.2",
+    "socket.io": "^4.7.5"
+  }
+}
