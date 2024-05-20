@@ -1,8 +1,8 @@
-const express = require('express');
-const router = express.Router();
-const controller = require('./controllers/controller');
 
-router.get('/data', controller.getData);
+let express = require('express');
+let router = express.Router();
+let controller = require('../controllers/controller');
+
 
 module.exports = router;
 

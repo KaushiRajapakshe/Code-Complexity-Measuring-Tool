@@ -1,14 +1,28 @@
-const express = require('express');
-const routes = require('./routers/router');
 
-const app = express();
-const port = 3000;
+let express = require('express');
+let app = express();
+let port = process.env.port || 3000;
+require('./dbConnection');
+let router = require('./routers/router');
+const { Socket } = require('socket.io');
+let http = require('http').createServer(app);
+let io = require('socket.io')(http);
 
-app.use('/', routes);
+app.use(express.static(__dirname + '/'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
-app.listen(port, () => {
-  console.log(`Server is listening at http://localhost:${port}`);
+
+//socket test 
+io.on('connection', (socket) => {
+    console.log('a user connected');
+    socket.on('disconnect', () => {
+        console.log('user disconnected');
+    });
+    setInterval(() => {
+        socket.emit('number', parseInt(Math.random() * 10));
+    }, 1000);
 });
-
-module.exports = app; // Export the app for testing
-
+http.listen(port, () => {
+    console.log("Listening on port ", port);
+});
