@@ -11,5 +11,5 @@ const fileRoutes = require('./src/routes/fileRoutes');
 app.use('/', fileRoutes);
 
 app.listen(port, () => {
-  console.log('Server is running on port ${port}');
+  console.log(`Server is running on port ${port}`);
 });

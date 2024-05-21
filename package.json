@@ -11,7 +11,10 @@
   "description": "SIT725 - Applied Software Engineering",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-java": "^2.6.0"
+  },
   "author": "Tharidhi",
   "license": "ISC"
 }

@@ -1,9 +1,10 @@
+<!-- src/views/history.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Code Complexity Measuring Tool</title>
+  <title>Formatted Code History</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
@@ -12,8 +13,8 @@
     <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="Logo"></a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Format</a>
+        <li class="nav-item">
+          <a class="nav-link" href="/">Format</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Complexity</a>
@@ -34,20 +35,20 @@
   </nav>
 
   <div class="container mt-5">
-    <div id="placeholder" class="text-center">
-      <div id="formattedCodeContainer" class="formatted-code-container">
-        <h3>Formatted Code</h3>
-        <div class="code-header">
-          <div class="line-no-header">Line <br>No.</div>
-          <div class="code-header-title">Programming Statements</div>
-        </div>
-        <pre id="formattedCode"></pre>
-      </div>
-      <div class="button-container">
-      <button id="uploadBtn" class="btn btn-primary mt-3">Upload Code</button>
-      <button id="historyBtn" class="btn btn-primary mt-3" onclick="window.location.href = '/history.html';">Access History</button>
-      </div>
-    </div>
+    <h2 class="text-center">Formatted Code History</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>File Name</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Functions</th>
+        </tr>
+      </thead>
+      <tbody id="historyTableBody">
+        <!-- Table rows will be populated here -->
+      </tbody>
+    </table>
   </div>
 
   <footer class="footer">
@@ -56,8 +57,9 @@
     </div>
   </footer>
 
-  <script src="/js/script.js"></script>
+  <!-- Separate JavaScript file -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/js/script2.js"></script>
+
 </body>
 </html>
-

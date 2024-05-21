@@ -7,13 +7,12 @@ const client = new MongoClient(uri, {
   useUnifiedTopology: true
 });
 
-let collection;
+let db;
 
 async function runDBConnection() {
   try {
     await client.connect();
-    const database = client.db(databaseName);
-    collection = database.collection('files');
+    db = client.db(databaseName);
     console.log('MongoDB connection connected successfully');
   } catch (err) {
     console.log('MongoDB connection error:', err);
@@ -23,4 +22,4 @@ async function runDBConnection() {
 
 runDBConnection();
 
-module.exports = { collection, runDBConnection };
+module.exports = { client, db, runDBConnection };
