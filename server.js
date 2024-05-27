@@ -1,12 +1,25 @@
-var express = require("express")
+var express = require("express");
+
+const cors = require('cors');
+const path = require('path');
 
 var app = express()
-
 var port = process.env.port || 8090;
 
 app.use(express.static(__dirname + '/'))
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+// app.use(function (req, res, next) {
+//     res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:8087');
+//     res.setHeader('Access-Control-Allow-Methods', 'POST');
+//     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+//     next();
+// });
+
+app.use(cors({
+    origin: 'http://localhost:8087'
+  }));
 
 require('./dbConnection.js');
 let router = require('./src/routes/router.js');
@@ -18,6 +31,14 @@ app.use('/api/complexity', router);
 
 app.get('/', (req, res) => {
     res.render(index.html);
+});
+
+app.get('/complexity', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views', 'complexity.html'));
+});
+
+app.get('/recomplexity', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views', 'recomplexity.html'));
 });
 
 //socket test

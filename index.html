@@ -24,65 +24,23 @@
     <script src="src/public/js/buttons.flash.min.js"></script>
     <script src="src/public/js/jszip.min.js"></script>
     <script src="src/public/js/pdfmake.min.js"></script>
+    <script src="src/public/js/Chart.js"></script>
     <script src="src/public/js/vfs_fonts.js"></script>
     <script src="src/public/js/buttons.html5.min.js"></script>
     <script src="src/public/js/buttons.print.min.js"></script>
     <script src="src/public/js/dataTables.fixedHeader.min.js"></script>
-
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
     <div id="header"></div>
-    <div class="p-3 mb-2 text-white">
-        <h1>Code </h1>
-        <div id="dis">
-            <table id="example" class="table table-bordered table-hover" style="width:100%">
-                <thead>
-                    <tr>
-                        <td width="3%">Line no</td>
-                        <td width="46%">Program statements</td>
-                        <td width="30%">Tokens identified under the size factor</td>
-                        <td width="3%">Cs</td>
-                        <td width="3%">Ctc</td>
-                        <td width="3%">Cnc</td>
-                        <td width="3%">Ci</td>
-                        <td width="3%">TW</td>
-                        <td width="3%">Cps</td>
-                        <td width="3%">Cr</td>
-
-                    </tr>
-                </thead>
-                <tbody>
-
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td width="3%"></td>
-                        <td width="46%">Total Code Complexity Count</td>
-                        <td width="30%"></td>
-                        <td width="3%">Cs</td>
-                        <td width="3%">Ctc</td>
-                        <td width="3%">Cnc</td>
-                        <td width="3%">Ci</td>
-                        <td width="3%">TW</td>
-                        <td width="3%">Cps</td>
-                        <td width="3%">Cr</td>
-
-                    </tr>
-                </tfoot>
-
-            </table>
-            <div id="footer"></div>
+    <div id="content">
+        <div class="p-3 mb-2 text-white">
+            <h1 style="color: black">Code Complexity</h1>
         </div>
+        <div id="footer"></div>
+        <script src="src/public/js/complexity.js"></script>
     </div>
-
-    <script>
-        $(function () {
-            $("#header").load("views/header.html");
-            $("#footer").load("views/footer.html");
-        });
-    </script>
 </body>
 
 </html>
