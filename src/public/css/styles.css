@@ -150,3 +150,7 @@ body {
   margin-bottom: 40px; /* Space between buttons and footer */
 }
 
+.table-image {
+  width: 30px;  /* Set the desired width */
+  height: 30px; /* Set the desired height */
+}

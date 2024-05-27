@@ -1,17 +1,21 @@
 {
   "dependencies": {
+    "chai-http": "^4.4.0",
     "express": "^4.19.2",
+    "mocha": "^10.4.0",
     "mongodb": "^6.6.2",
     "multer": "^1.4.5-lts.1"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha 'src/tests/**/*.js'"
   },
   "name": "code-complexity-measuring-tool",
   "description": "SIT725 - Applied Software Engineering",
   "version": "1.0.0",
   "main": "server.js",
   "devDependencies": {
+    "chai": "^5.1.1",
     "prettier": "^3.2.5",
     "prettier-plugin-java": "^2.6.0"
   },

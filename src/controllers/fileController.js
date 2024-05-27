@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const multer = require('multer');
-const { insertFile } = require('../models/fileModel');
+const { insertFile, getFiles } = require('../models/fileModel');
 const prettier = require('prettier');
 
 
@@ -73,5 +73,9 @@ const getHistory = async (req, res) => {
     res.status(500).send('Error fetching file history.');
   }
 };
+
+
+
+
 
 module.exports = { uploadFile, handleUpload , formatCode , getHistory};
