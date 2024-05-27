@@ -4,13 +4,50 @@
 
 body {
     font-family: apple-system;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     background-color: white;
     /* color: black; */
 }
 #example{
-    background-image: linear-gradient(rgb(209, 153, 222), #BA4EE5);
+    background-image: linear-gradient(rgb(217, 174, 229), #d08ee8);
+}
+.btn{
+    background-color: #ac20e3;
+}
+#content{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.save-btn {
+    background-color: #ac20e3;
+    color: white;
+    width: 100px;
+    float: right;
+}
+
+#submit, #update {
+    background-color: #ac20e3;
+    color: white;
+    width: 100px;
+    float: left;
+    margin-left: 300px;
+}
+
+#delete{
+    background-color: #4E008B;
+    color: white;
+    width: 100px;
+    float: left;
+    margin-left: 50px;
+}
+
+#csv, #print {
+    margin: 10px;
+    float: left;
+}
+.mesuringfactors {
+    margin-left: 30vw;
 }
 /* .table-class{
     background-color: #ac20e3;
@@ -59,31 +96,34 @@ ul {
     overflow: hidden;
     background-color: #BA4EE5;
     margin-right: 150px;
-  }
+}
   
-  li {
+li {
     float: right;
-  }
+}
   
-  li:last-child {
+li:last-child {
     border-right: none;
-  }
+}
   
-  li a {
+li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 17px 16px;
     text-decoration: none;
-  }
+}
   
-  li a:hover:not(.active) {
+li a:hover:not(.active) {
     background-color: #ac20e3;
-  }
+    color: white;
+    text-decoration: none;
+}
   
-  .active {
+.active {
     background-color: #04AA6D;
   }
+  
 .user-image-size {
     height: 50px;
     width: 120px;
