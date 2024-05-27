@@ -2,18 +2,19 @@
 <nav>
     <div class="nav-wrapper navbar-size">
         <ul>
-            <a href="#" class="brand-logo"><img class="user-image-size" src="../src/public/images/logo.png"></a>
-            <li><a href="/tips/">Tips</a></li>
-            <li><a href="/visualization/">Visualization</a></li>
+            <a href="/" class="brand-logo"><img class="user-image-size" src="../src/public/images/logo.png"></a>
+            <li><a href="/">Tips</a></li>
+            <li><a href="/">Visualization</a></li>
             <li><a href="/complexity">Complexity</a></li>
-            <li><a href="/format">Format</a></li>
+            <li><a href="/">Format</a></li>
         </ul>
     </div>
 </nav>
-
-<div class="p-3 mb-2 text-white">
-    <h1 style="color: black">Code Complexity</h1>
-    </br>
-</div>
-
+<script>
+    localStorage.setItem('id', 'sdfgh101');
+    const storedValue = localStorage.getItem('id');
+    
+    const outputElement = document.getElementById('output');
+    outputElement.textContent = 'Value from localStorage: ' + storedValue;
+</script>
 </html>
