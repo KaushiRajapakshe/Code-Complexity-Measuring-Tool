@@ -29,6 +29,9 @@ let io = require('socket.io')(http);
 
 app.use('/api/complexity', router);
 
+const fileRoutes = require('./src/routes/fileRoutes');
+app.use('/', fileRoutes);
+
 app.get('/', (req, res) => {
     res.render(index.html);
 });
