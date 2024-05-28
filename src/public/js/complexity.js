@@ -221,9 +221,9 @@ function loadetable(data, files) {
             const exists2 = pattern1.test(files[0].name);
             var extention = "";
             if (exists1 == true)
-                extention = java;
+                extention = 'java';
             else if (exists2 == true)
-                extention = text
+                extention = 'text'
             else
                 extention = ''
             if (localStorage.getItem('filename') !== null) {
