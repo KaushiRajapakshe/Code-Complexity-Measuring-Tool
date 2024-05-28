@@ -446,7 +446,7 @@ const updateMeasuringFactors = (complexityFactors) => {
         data: complexityFactors,
         type: 'POST',
         success: (result) => {
-            alert(result.message);
+            alert("Update factor "+complexityFactors._id+"'s factors of complexity success");
         }
     })
 }
