@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Code Complexity Measuring Tool">
+    <meta name="author" content="SitePoint">
+    <meta property="og:title" content="Code Complexity Measuring Tool">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Code Complexity Measuring Tool">
+    <title>Code Complexity Measuring Tool</title>
+    <link rel="stylesheet" type="text/css" href="../src/public/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="../src/public/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../src/public/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../src/public/css/fixedHeader.dataTables.min.css">
+    <!-- Custom Style Sheet-->
+    <link rel="stylesheet" href="../src/public/css/style.css">
+    <script src="../src/public/js/jquery-3.3.1.js"></script>
+    <script src="../src/public/js/popper.min.js"></script>
+    <script src="../src/public/js/bootstrap.min.js"></script>
+    <script src="../src/public/js/jquery.dataTables.min.js"></script>
+    <script src="../src/public/js/dataTables.buttons.min.js"></script>
+    <script src="../src/public/js/buttons.flash.min.js"></script>
+    <script src="../src/public/js/jszip.min.js"></script>
+    <script src="../src/public/js/pdfmake.min.js"></script>
+    <script src="../src/public/js/Chart.js"></script>
+    <script src="../src/public/js/vfs_fonts.js"></script>
+    <script src="../src/public/js/buttons.html5.min.js"></script>
+    <script src="../src/public/js/buttons.print.min.js"></script>
+    <script src="..src/public/js/dataTables.fixedHeader.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="content">
+        <div class="p-3 mb-2 text-white">
+            <h1 style="color: black">Code Complexity</h1>
+        </div>
+        <div class="p-3 mb-2 text-black">
+            <div id="dis"></div>
+            <div align="left" width="100%" color="black">
+                <form id="uploadForm">
+                    <label style="color: #0c0c0c" for="fileUploader">File Name: </label>
+                    <input type="file" name="file" size="50" id="fileUploader" class="btn" />
+                </form>
+                <br />
+                <!-- add validation only availble this button when upload the file -->
+
+            </div>
+            <table id="example" class="table table-bordered table-hover" style="width:100%">
+                <thead>
+                    <tr>
+                        <td width="3%">Line no</td>
+                        <td width="46%">Program statements</td>
+                        <td width="30%">Tokens identified under the size factor</td>
+                        <td width="3%">Cs</td>
+                        <td width="3%">Ctc</td>
+                        <td width="3%">Cnc</td>
+                        <td width="3%">Ci</td>
+                        <td width="3%">TW</td>
+                        <td width="3%">Cps</td>
+                        <td width="3%">Cr</td>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+            <br />
+            <button id="csv" class="btn save-btn">CSV</button> <button id="print" class="btn save-btn">Print</button>
+            </br></br>
+            <div class="mesuringfactors">
+                <label>Measuring Factor:</label><br>
+                <input type="checkbox" id="Cs" name="Cs" value="Cs">
+                <label for="Cs"> Cs - Size </label><br>
+                <input type="checkbox" id="Cts" name="Cts" value="Cts">
+                <label for="Cts"> Cts</label><br>
+                <input type="checkbox" id="Cnc" name="Cnc" value="Cnc">
+                <label for="Cnc"> Cnc</label><br>
+                <input type="checkbox" id="Ci" name="Ci" value="Ci">
+                <label for="Ci"> Ci</label><br>
+                <input type="checkbox" id="Tw" name="Tw" value="Tw">
+                <label for="Tw"> Tw</label><br>
+                <input type="checkbox" id="Cps" name="Cps" value="Cps">
+                <label for="Cps"> Cps</label><br>
+                <input type="checkbox" id="Cr" name="Cr" value="Cr">
+                <label for="Cr"> Cr</label><br>
+                <input type="checkbox" id="Cp" name="Cp" value="Cp">
+                <label for="Cp"> Cp</label><br><br>
+                <input class="btn update" type="update" id="update" value="Update">
+                <input class="btn delete" type="delete" id="delete" value="Delete">
+
+            </div>
+            <canvas id="chart-0"></canvas>
+
+        </div>
+        <div id="footer"></div>
+        <script src="../src/public/js/recomplexity.js"></script>
+    </div>
+</body>
+
+</html>
