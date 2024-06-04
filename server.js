@@ -5,7 +5,7 @@ const path = require('path');
 
 
 var app = express()
-var port = process.env.port || 8090;
+var port = process.env.port || 3000;
 
 app.use(express.static(__dirname + '/'))
 app.use(express.json());
@@ -45,11 +45,14 @@ app.get('/recomplexity', (req, res) => {
     res.sendFile(path.join(__dirname, '/views', 'recomplexity.html'));
 });
 
-//socket test
+app.get('/admin', (req, res) => {
+    res.render('admin');
+});
+
 io.on('connection', (socket) => {
-    console.log('a user connected');
+    console.log('A user connected');
     socket.on('disconnect', () => {
-        console.log('user disconnected');
+        console.log('User disconnected');
     });
     setInterval(() => {
         socket.emit('number', parseInt(Math.random() * 10));

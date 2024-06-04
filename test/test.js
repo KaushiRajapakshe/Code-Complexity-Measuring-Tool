@@ -2,7 +2,7 @@ var expect = require("chai").expect;
 var request = require("request");
 const app = require('./server');
 
-var url = "http://localhost:8090/api/complexity/factors";
+var url = "http://localhost:3000/api/complexity/factors";
 
 let factor = {
     _id: '6654e1cdc61b899de028d42f',
