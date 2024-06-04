@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Code Improvement Rules</title>
+    <link rel="stylesheet" href="/css/admin-styles.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Manage Code Improvement Rules</h1>
+        <div id="rules-container">
+            <!-- Rules will be dynamically populated here -->
+        </div>
+        <div class="add-rule">
+            <h2>Add New Rule</h2>
+            <form id="add-rule-form" method="POST">
+                <label for="factor">Factor:</label>
+                <select id="factor" name="factor">
+                    <option value="Cs">Cs</option>
+                    <option value="Ctc">Ctc</option>
+                    <option value="Cnc">Cnc</option>
+                    <option value="Ci">Ci</option>
+                    <option value="TW">TW</option>
+                    <option value="Cps">Cps</option>
+                    <option value="Cr">Cr</option>
+                    <option value="Cp">Cp</option>
+                </select>
+                <label for="severity">Severity:</label>
+                <select id="severity" name="severity">
+                    <option value="Bad">Bad</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Good">Good</option>
+                </select>
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description" required>
+                <button type="button" onclick="addRule()">Save</button>
+                <p id="validation-message" class="validation-message"></p> <!-- Placeholder for validation message -->
+            </form>
+        </div>
+    </div>
+    <script src="js/admin.js"></script>
+</body>
+</html>

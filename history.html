@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <meta name="description" content="Code complexity Measuring Tool">
+
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/history.css">
+
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+
+        <nav>
+            <ul>
+                <li><a hresf="#">Format</a></li>
+                <li><a hresf="#">Complexity</a></li>
+                <li><a hresf="#">Visualization</a></li>
+                <li><a hresf="#">Tips</a></li>
+                <form action="/logout" class=""logout-btn method="post" style="display: inline;">
+                <button type="submit" class="btn">Logout</button>
+                </form>
+            </ul>
+        </nav>
+    </header>
+   
+
+<!--main-->
+    <main class="main-body">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <h3 id="heading">Code Complexity History</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="table">
+            <table border = "1" width="200" height="400" >
+                <thead>
+                    <tr>
+                        <th>File Name</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Cs</th>
+                        <th>Cts</th>
+                        <th>Cnc</th>
+                        <th>Ci</th>
+                        <th>Tw</th>
+                        <th>Cps</th>
+                        <th>Cr</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Calculator.java</td>
+                        <td>2024.05.01</td>
+                        <td>10.00 am</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>11</td>
+                        <td>32</td>
+                        <td class="action-buttons">
+                            <button class="view-btn">View</button>
+                            <button class="delete-btn">Delete</button>
+                            <button class="refresh-btn">Refresh</button>
+                            <button class="download-btn">Download</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="11">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="11">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="11">&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+            <div class="pagination">
+                <button id="p1">Previous</button>
+                <button>1</button>
+                <button id="p3">Next</button>
+            </div>
+        </div>
+
+
+        
+
+        
+
+
+    </main>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/script.js"></script>
+
+       <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Copyright ©2024 All rights reserved | The Code Complexity Measuring Tool owned by Straight Aces</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
