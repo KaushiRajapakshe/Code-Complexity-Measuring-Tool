@@ -1,0 +1,82 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f0f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #4a154b;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px 40px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #7b1fa2;
+}
+
+.result {
+    background: #e1bee7;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.grade {
+    font-size: 3em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.complexity-description {
+    font-size: 1.2em;
+}
+
+.tips {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f3e5f5;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: left;
+}
+
+.test-button {
+    background-color: #7b1fa2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.test-button:hover {
+    background-color: #6a1b9a;
+}
