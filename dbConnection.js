@@ -1,6 +1,6 @@
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const multer = require('multer');
-const uri = "mongodb+srv://kaushi1:root123@cluster0.ycoyequ.mongodb.net/, ";
+const uri = "";
 
 const storage = multer.memoryStorage();
 const upload = multer({ storage });

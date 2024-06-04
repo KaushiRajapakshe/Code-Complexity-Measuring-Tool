@@ -2,7 +2,7 @@ var expect = require("chai").expect;
 var request = require("request");
 const app = require('./server');
 
-var url = "http://localhost:8090/api/complexity/factors";
+var url = "http://localhost:3000/api/complexity/factors";
 
 let factor = {
     _id: '6654e1cdc61b899de028d42f',
@@ -84,13 +84,13 @@ describe("Complexity Get API", function () {
 
 });
 
-describe('GET /data', function() {
-    it('respond with json containing a list of all items', function(done) {
+describe('GET /api/visualisation', function () {
+    it('respond with json containing a list of all items', function (done) {
         request(app)
             .get('/data')
             .expect('Content-Type', /json/)
             .expect(200)
-            .end(function(err, res) {
+            .end(function (err, res) {
                 if (err) return done(err);
                 expect(res.body).to.be.an('array');
                 expect(res.body).to.have.lengthOf.at.least(1);

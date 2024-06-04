@@ -1,4 +1,4 @@
-const { client } = require('../app');
+const { client } = require('../../dbConnection.js')
 
 const insertFile = async (fileData) => {
   try {
