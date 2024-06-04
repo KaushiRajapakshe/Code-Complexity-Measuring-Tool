@@ -1,0 +1,52 @@
+<!-- src/views/history.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization Code History</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/public/css/main.css">
+    <link rel="stylesheet" href="../src/public/css/style.css">
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper navbar-size">
+        <ul>
+            <a href="/" class="brand-logo"><img class="user-image-size" src="../src/public/images/logo.png"></a>
+            <li><a href="/">Tips</a></li>
+            <li><a href="/visualization">Visualization</a></li>
+            <li><a href="/complexity">Complexity</a></li>
+            <li><a href="/">Format</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <h2 class="text-center">Visualization Code History</h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>File Name</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Functions</th>
+        </tr>
+        </thead>
+        <tbody id="historyTableBody">
+        <!-- Table rows will be populated here -->
+        </tbody>
+    </table>
+</div>
+
+<div class="footer">
+    <div class="text">Copyright ©2024 All rights reserved | The Code Complexity Measuring Tool owned by Straight Aces
+    </div>
+</div>
+
+<!-- Separate JavaScript file -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../src/public/js/visualization.js"></script>
+
+</body>
+</html>

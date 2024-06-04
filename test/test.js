@@ -84,13 +84,13 @@ describe("Complexity Get API", function () {
 
 });
 
-describe('GET /data', function() {
-    it('respond with json containing a list of all items', function(done) {
+describe('GET /api/visualisation', function () {
+    it('respond with json containing a list of all items', function (done) {
         request(app)
             .get('/data')
             .expect('Content-Type', /json/)
             .expect(200)
-            .end(function(err, res) {
+            .end(function (err, res) {
                 if (err) return done(err);
                 expect(res.body).to.be.an('array');
                 expect(res.body).to.have.lengthOf.at.least(1);
