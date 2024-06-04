@@ -8,7 +8,20 @@
     <script src="/socket.io/socket.io.js"></script>
 </head>
 <body>
+<nav >
+        <div class="nav-wrapper navbar-size">
+            <ul>
+                <a href="/" class="brand-logo"><img class="user-image-size" src="/images/logo.png"></a>
+                <li><a href="/">Tips</a></li>
+                <li><a href="/">Visualization</a></li>
+                <li><a href="/complexity">Complexity</a></li>
+                <li><a href="/">Format</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br/>
     <div class="container">
+
         <h1>Manage Code Improvement Rules</h1>
         <div id="rules-container">
             <!-- Rules will be dynamically populated here -->
@@ -39,7 +52,13 @@
                 <p id="validation-message" class="validation-message"></p> <!-- Placeholder for validation message -->
             </form>
         </div>
+
     </div>
+    <br/>
+    <div class="footer">
+                <div class="text">Copyright ©2024 All rights reserved | The Code Complexity Measuring Tool owned by Straight Aces
+                </div>
+            </div>
     <script src="js/admin.js"></script>
 </body>
 </html>

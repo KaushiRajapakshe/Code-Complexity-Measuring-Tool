@@ -22,3 +22,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 function testNewCode() {
     window.location.href = '/test-new-code';  // Redirect to the page where user can test a new code
 }
+
+$(function () {
+    $("#header").load("views/header.html");
+    $("#footer").load("views/footer.html");
+});

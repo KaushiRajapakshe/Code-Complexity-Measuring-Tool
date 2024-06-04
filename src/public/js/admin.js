@@ -25,6 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+$(function () {
+    $("#header").load("views/header.html");
+    $("#footer").load("views/footer.html");
+});
 async function loadRules() {
     const response = await fetch('/admin/rules');
     const rules = await response.json();
