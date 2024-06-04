@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+
+<body style="background-image: url('/backgroundS.jpg');">
+    <div class="form-container-login" style="margin-left: 40%;">
+        <h2 class="h2"><a href="/"><i class="fas fa-arrow-left"></i></a> SignUp and Join Us</h2>
+
+        <% if (errorMessage) { %>
+            <div class="alert alert-danger error-message">
+                <%= errorMessage %>
+            </div>
+            <% } %>
+
+        <form action="/signup" method="post">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="off">
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required
+                    autocomplete="off">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="submit-btn">SignUp</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

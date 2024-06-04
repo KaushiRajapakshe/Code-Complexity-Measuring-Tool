@@ -1,0 +1,9 @@
+### VS Code ###
+.vscode/
+/node_modules/
+/package-lock.json
+/file/
+.DS_Store
+.env
+.vs_code
+
